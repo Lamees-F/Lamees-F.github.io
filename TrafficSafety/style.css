@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* HEADER */
+.header{
+    background-image: linear-gradient(45deg,#84BD00,#00A3E0);
+    width: 100%;
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header .wave{
+    position: absolute;
+    bottom: 0px;
+}
+
+.middle{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 40px;
+}
+.middle h1{
+    font-size: 50px;
+}
+/*aspects*/
+.continer0{
+    margin: 5%;
+}
+.continer0 h2{
+    padding: 20px;
+}
+.card{
+    position: relative;
+    overflow: hidden;
+}
+.card::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 220%;
+    background-image: linear-gradient(45deg,#84BD00,#00A3E0);
+    opacity: 80%;
+    top: -50%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin:center top 0 ;
+    transition:  0.5s;
+}
+.card:hover::before{
+    left: 10%;
+}
+.card img{
+    width: cover;
+    height: 280px;
+
+}
+.card-text{
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: -40%;
+    left: 0;
+    z-index: 1;
+    transition: 1.1s;
+}
+.card:hover .card-text{
+top: 10%;
+}
+.text-theme{
+    color: gray;
+}
+.footer{
+    background-image: linear-gradient(45deg,#84BD00,#00A3E0);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*   chatbot    */
+#chatbotToggler{
+    position: fixed;
+    right: 30px;
+    bottom: 35px;
+    height: 50px; 
+    width: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(90deg,#00A3E0,#84BD00);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+.child{
+    box-shadow: 0 0 2px lightgray;
+    border-radius: 15px;
+    height: 30rem;
+    width: 16rem;
+    margin: auto;
+}
+.chatheader img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin:0 3px;
+    border: 1px solid rgb(231,231,231);
+    padding: 5px;
+}
+#test{
+    position: fixed;
+    bottom: 100px;  
+    right: 30px;
+    display: none;
+    transform-origin: bottom;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0,0.1),
+                0 32px 64px -48px rgba(0, 0, 0,0.5);
+    z-index: 1;
+    transition: all 0.1s ease;
+}
+.chatheader{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    background: white;
+    width: inherit;
+    padding: 5px 0;
+    border-radius: 15px 15px 0 0;
+    z-index: 1;
+    box-shadow: 0 0 2px rgb(175,175,175);
+}
+.h-child{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+.chatheader span{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+.name{
+    font-weight: 600;
+}
+.closeBtn{
+   position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color: darkgray;
+    font-size: 14px;
+    cursor: pointer;
+}
+.chatfooter{
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    background-image: linear-gradient(90deg,#00A3E0,#84BD00);
+    border-radius: 0 0 15px 15px;
+    color: white;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 0 3px rgb(153,153,153);
+}
+#chatBox{
+    position: relative;
+    top: 58px;
+    padding: 8px 10px;
+    font-size: 12px;
+    height: 24rem;
+    overflow: auto;
+    background: rgb(227, 224, 224);
+    text-align: center;
+}
+/* these classes will be used in javascript file */
+.msg{
+    background: white;
+    padding: 5px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: max-content;
+    font-size: 14px;
+    color: black;
+    box-shadow: 0 0 5px rgb(226,226,226);
+    max-width: 65%;
+    text-align: left;
+}
+.test{
+    text-align: right;
+    margin: 20px 0;
+}
+.rep{
+    background-image: linear-gradient(90deg,#00A3E0,#84BD00);
+    color: white;
+    padding: 5px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgb(211,211,211);
+}
+.opt{
+    padding: 5px 20px;
+    columns: white;
+    border: 1px solid #00A3E0;
+    border-radius: 1rem;
+    margin: 0.5rem 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 500;
+    background: white;
+    text-align: center;
+    font-size: 14px;
+    color: #84BD00;
+}
+@media(max-width:490px){
+    #test{
+        right: 0;
+        bottom:0;
+        width: 100%;
+        height:100%;
+        border-radius: 0;
+    }
+    #chatbot.child{
+        width: 100%;
+        height: 100%;
+    }
+    #chatBox{
+        height: 85%;
+    }
+    .chatheader{
+        border-radius: 0;
+    }
+    .chatfooter{
+        border-radius: 0;
+    }
+}
