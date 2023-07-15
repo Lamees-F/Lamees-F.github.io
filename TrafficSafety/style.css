@@ -240,15 +240,15 @@ top: 10%;
     }
     #chatbot.child{
         width: 100%;
-        height: 100%;
+        height: 95%;
     }
     #chatBox{
-        height: 90%;
+        height: 100%;
     }
     .chatheader{
         border-radius: 0;
     }
     .chatfooter{
-        border-radius: 0;
+        display: none;
     }
 }
