@@ -1,9 +1,9 @@
 var data= {
     chatinit:{
         title: ["Hello ","I am A simple chatbot","Which traffic safety Aspect would you like to know more about?"],
-        options: ["Vihecle","Driver","Road"]
+        options: ["Vehicle","Driver","Road"]
     },
-    vihecle: {
+    vehicle: {
         title:["Please select a feature"],
         options:['Airbags','Fluid level','Tires pressures'],
         url : {
@@ -163,7 +163,5 @@ function handleScroll(){
     var elem= document.getElementById('chatBox');
     elem.scrollTop= elem.scrollHeight*100;
 }
-const chatbotCloseBtn = document.querySelector(".close-btn");
-const chatbotToggler = document.querySelector("#chatbotToggler");
 
 
