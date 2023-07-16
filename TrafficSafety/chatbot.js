@@ -46,7 +46,7 @@ var data= {
     },
     back: {
         title:["Which traffic safety Aspect would you like to know more about?"],
-        options: ["Vihecle","Driver","Road"],
+        options: ["Vehicle","Driver","Road"],
         url : {
         }
     },
