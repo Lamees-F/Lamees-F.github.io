@@ -4,85 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <title>Traffic Safety</title>
-    <link rel="icon" href="logo.png"></head>
+</head>
 <body>
     <style>
         * {
           box-sizing: border-box;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
         }
-        
+       
         body {
-        background-image: linear-gradient(to right, #84BD00, #00A3E0);
+          font-family: 'Montserrat', sans-serif;
+          font-size: 15.7px;
+          background-image: linear-gradient(to right, #84BD00, #00A3E0);
         }
-        
-        
+       
+       
         header {
           background-image: linear-gradient(to right, #84BD00, #00A3E0);
           padding: 30px;
           text-align: center;
-          font-size: 35px;
+          font-size: 20px;
           color: white;
-          
+         
         }
-        
-        
         .nav {
           float: left;
           width: cover;
-          height: 300px; 
+          height: 300px;
           background-image: url('Vehicle.png');
           background-size: cover;
-          background-repeat: no-repeat; 
+          background-repeat: no-repeat;
           padding: 20px;
           color: black;
           text-align: center;
-          
+         
         }
-      
         .nav ol {
           list-style-type: none;
           padding: 0;
           align-self: center;
-          bottom: 0; 
+          bottom: 0;
           background: rgb(0, 0, 0);
-          background: rgba(0, 0, 0, 0.5); 
-          color: #f1f1f1; 
+          background: rgba(0, 0, 0, 0.5);
+          color: #f1f1f1;
           width: 100%;
           transition: .5s ease;
           opacity:0;
           color: white;
-          font-size: 20px;
+          font-size: 22.6px;
           padding: 20px;
           text-align: center;
         }
 
         .nav ol:hover{
           opacity: 1;
-        }        
+        }
+     
+             
         .nav1 {
           float: left;
           width: cover;
-          height: 300px; 
+          height: 300px;
           background-image: url('Driver.png');
           background-size: cover;
           background-repeat: no-repeat;
           padding: 20px;
           color: black;
           text-align: center;
+          font-size: 16.8px;
         }
-      
+     
         .nav1 ol {
           list-style-type: none;
           padding: 0;
           align-self: center;
-          bottom: 0; 
+          bottom: 0;
           background: rgb(0, 0, 0);
-          background: rgba(0, 0, 0, 0.5); 
-          color: #f1f1f1; 
+          background: rgba(0, 0, 0, 0.5);
+          color: #f1f1f1;
           width: 100%;
           transition: .5s ease;
           opacity:0;
@@ -97,23 +97,24 @@
         .nav2 {
           float: left;
           width: cover;
-          height: 300px; 
+          height: 300px;
           background-image: url('Road.png');
           background-size: cover;
-          background-repeat: no-repeat; 
+          background-repeat: no-repeat;
           padding: 20px;
           color: black;
           text-align: center;
+       
         }
-      
+     
         .nav2 ol {
           list-style-type: none;
           padding: 0;
           align-self: center;
-          bottom: 0; 
+          bottom: 0;
           background: rgb(0, 0, 0);
-          background: rgba(0, 0, 0, 0.5); 
-          color: #f1f1f1; 
+          background: rgba(0, 0, 0, 0.5);
+          color: #f1f1f1;
           width: 100%;
           transition: .5s ease;
           opacity:0;
@@ -130,12 +131,12 @@
           padding: 20px;
           width: 70%;
           background-color: #f1f1f1;
-          height: 300px; 
+          height: 300px;
           color: rgb(49, 42, 32);
-        
+       
         }
-        
-        
+       
+       
         section::after {
           content: "";
           display: table;
@@ -144,16 +145,30 @@
         footer {
           background-image: linear-gradient(to right, #84BD00, #00A3E0);
           padding: 10px;
-          text-align: center;
+          text-align: left;
+          font-size: 12px;
           color: white;
         }
 
-      
+     
         @media (max-width: 600px) {
           nav, article {
             width: 100%;
             height: auto;
           }
+        }
+        @media (min-device-width: 768px) and (max-device-width: 1024px) {
+          nav, article {
+            width: 100%;
+            height: 100%;
+          }
+         
+        }
+        @supports(-webkit-touch-callout: none){
+          /* CSS specific to ios devices*/
+        }
+        @supports not (-webkit-touch-callout: none){
+          /* CSS for other than ios devices*/
         }
 
         </style>
@@ -161,25 +176,25 @@
         <body>
 
         <header>
-          <h2> Vehicle & Driver & Road Safety</h2>
+        <h2>Vehicle & Driver & Road Safety</h2>
         </header>
-        
+       
         <section>
-          
-          <nav class="nav">
-            <div>Here we have Key Area Of Focus For Road Safety :</div>
-            <ol>
-             <li>Infrastructure improvements</li>
-             <li>Educationa and Awareness</li>
-             <li>Law enforcement</li>
-             <li>Instruments used to regulate traffic</li>
-             <li>Vehical safety standards</li>
-             <li>Emergency response</li>
-             <li>Cracking down on traffic offences</li>
-            </ol>
+
+
+            <nav class="nav">
+
+              <div>Here we have some Advices For Vehicle Safety </div>
+              <ol>
+               <li>-Keep a safe distance.</li>
+               <li>-Buckle up before you drive.</li>
+               <li>-Check the gasoline before drive.</li>
+               <li>-Check the oil of car.</li>
+              </ol>
+             
+           </div></nav>
            
-         </div></nav>
-          
+         
           <article>
             <h2>Vehicle Safety...</h2>
             <ul>
@@ -191,9 +206,9 @@
               <li>Tires pressures</li>
               <li>Fluids level check</li>
             </ul>
-            
+           
           </article>
-        </section> 
+        </section>
 
         <footer></footer>
 
@@ -201,24 +216,23 @@
 
           <nav class="nav1">
 
-          <div>Here we have more Features For Vehicle Safety :</div>
+          <div>Here we have more Features For Driver Safety :</div>
           <ol>
-          <li>Electronic stability control</li>
-          <li>Active safety features</li>
-          <li>Passive safety features</li>
-          <li>Safety-belt features</li>
-          <li>Newer safety features</li>
-          <li>Visibility</li>
-          <li>Maintenance</li>
+          <li>-Electronic stability control.</li>
+          <li>-Active safety features.</li>
+          <li>-Passive safety features.</li>
+          <li>-Safety-belt features.</li>
+          <li>-Visibility.</li>
+          <li>-Maintenance.</li>
           </ol>
            
          </div></nav>
-          
+         
           <article>
             <h2>Driver Safety...</h2>
             <ul>
              <li>Is the practice of taking measures to ensure the safe operation of a Vehicle while driving on the road.</li>
-             <li>It is essential to prioritize driver safety to prevent Accidents, Injuries and Fatalites on the road.</li><br>
+             <li>It is essential to prioritize driver safety to prevent Accidents, Injuries and Fatalities on the road.</li><br>
              <p>Because of the driver is the most effective factor in the traffic operation , So must being alert for:</p><br>
              <li>Your speed</li>
              <li>Don't use your phone while driving </li>
@@ -235,21 +249,19 @@
 
           <div>Here we have Key Area Of Focus For Road Safety :</div>
           <ol>
-           <li>Infrastructure improvements</li>
-           <li>Educationa and Awareness</li>
-           <li>Law enforcement</li>
-           <li>Instruments used to regulate traffic</li>
-           <li>Vehical safety standards</li>
-           <li>Emergency response</li>
-           <li>Cracking down on traffic offences</li>
+           <li>-Infrastructure improvements.</li>
+           <li>-Education and Awareness.</li>
+           <li>-Law enforcement.</li>
+           <li>-Vehicle safety standards.</li>
+           <li>-Emergency response.</li>
           </ol>
          
        </div></nav>
-          
+         
           <article>
             <h2>Road Safety...</h2>
             <ul>
-            <li>Refers to the measures and practices that are put in place to prevent Accidents, Injuries and Fatalites on the road.</li>
+            <li>Refers to the measures and practices that are put in place to prevent Accidents, Injuries and Fatalities on the road.</li>
             <li>In another meaning is actions performed to lower the risk of fatalities and injuries from traffic accidents.</li><br>
             <p>So for realizing the importance of roads, the Saudi Government constructed high quality networks of roads all over the country.</p><br>
             <li>Building side parking.</li>
@@ -260,7 +272,7 @@
           </article>
         </section>
 
-        <footer></footer>
-    
+        <footer>Created by : Batool Alhumaidi & Lamees Aloqlan</footer>
+   
 </body>
 </html>
