@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="images/icon.png">
+
+</head>
+<body >
+    <div class="box" id="questionScreen" >
+        <div class="title">
+            مارثون اليوم الوطني
+        </div>
+        <div class="header">
+            <div class="score-box">النقاط: <span>0</span></div>
+            <div class="timer-box">الوقت المتبقي: <span></span></div>
+        </div>
+        <div class="q-box">
+            ابحث عني بالقرب من المصاعد!
+        </div>
+        <div class="option-box">
+            <span onclick="checkAns(this)" data-opt="1"></span>
+            <span onclick="checkAns(this)" data-opt="2"></span>
+            <span onclick="checkAns(this)" data-opt="3"></span>
+            <span onclick="checkAns(this)" data-opt="4"></span>
+        </div>
+        <div class="footer">
+            <button onclick="showNext()" class="next">التالي</button>
+            <button onclick="showResult()"class="win" style="display: none;" id="startConfetti">اعرض النتيجة</button>
+        </div>
+    </div>
+    <div class="box" id="winningScreen" style="display: none;">
+        <div class="title">
+            مبارك لقد اجتزت المارثون
+        </div>
+        <div class="winning-box">
+            <img src="images/winning.jpg" alt="" >
+        </div>
+        <div class="button">
+            <a href = "mailto:411201927@qu.edu.sa?subject = رأي وملاحظات" id="stopConfetti">اسعدني برأيك وملاحظاتك </a>
+            <a href="timeline.html" id="stopConfetti">اعرف أكثر عن بدايتنا</a>
+        </div>
+    </div>
+    <div class="box" id="resultScreen" style="display: none;">
+        <div class="title">
+            نتيجتك في المارثون
+        </div>
+        <div class="result-box">
+            <label >الأسئلة: </label>
+            <span id="total-q">3</span>
+            <label >الإجابات الصحيحة: </label>
+            <span id="corrcet-answer">0</span>
+            <label >الإجابات الخاطئة: </label>
+            <span id="wrong-answer">0</span>
+        </div>
+        <div class="button">
+            <a href="index.html" id="stopConfetti">ابدأ مجددًا</a>
+            <a href = "mailto:411201927@qu.edu.sa?subject = رأي وملاحظات" id="stopConfetti">اسعدني برأيك وملاحظاتك </a>
+        </div>
+        <div class="go">
+            <a href="timeline.html" id="stopConfetti">اعرف أكثر عن بدايتنا</a>
+        </div>
+    </div>
+    <footer>
+        <p>صمم بواسطه لميس العقلان</p>
+    </footer>
+
+</body>
+<script src="JS/jquery-3.6.0.min.js"></script>
+<script src="JS/jquery.confetti.js"></script>
+<script src="JS/quiz.js"></script>
+<script src="JS/script.js"></script>
+
+</html>
