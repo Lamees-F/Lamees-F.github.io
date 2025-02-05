@@ -18,18 +18,34 @@
     position: absolute;
     bottom: 0px;
 }
-
-.middle{
+.middle {
     width: 80%;
     height: 80vh;
     display: flex;
     justify-content: start;
     align-items: center;
     padding: 40px;
+    position: relative;
+    z-index: 10;         
 }
 .middle h1{
     font-size: 30px;
 }
+.middle p {
+    font-size: 18px;
+    max-width: 600px;
+}
+.social-icons {
+    position: relative;
+    z-index: 20;         
+}
+
+.social-icons .icon-link {
+    text-decoration: none;
+    pointer-events: auto;
+
+}
+
 /*aspects*/
 .continer0{
     margin: 5%;
@@ -37,10 +53,18 @@
 .continer0 h2{
     padding: 20px;
 }
-.card{
+.card {
     position: relative;
+    display: flex;               /* Enable Flexbox */
+    flex-direction: column;      /* Stack items vertically */
+    align-items: center;         /* Center items horizontally */
+    justify-content: center;     /* Center items vertically */
+    text-align: center;          /* Center text alignment */
+    padding: 20px;               /* Add padding for better spacing */
     overflow: hidden;
+    height: 200px;               /* Ensure consistent card height */
 }
+
 .card::before{
     position: absolute;
     content: '';
@@ -66,17 +90,36 @@
     width: 100%;
     padding: 0 20px;
     position: absolute;
-    top: -40%;
     left: 0;
     z-index: 1;
     transition: 1.1s;
 }
-.card:hover .card-text{
-top: 10%;
-}
 .text-theme{
     color: gray;
 }
+/*slider*/
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    padding: 10px 0;
+}
+
+.slider {
+    display: flex;
+    animation: slide 15s linear infinite;
+}
+
+.slider img {
+    width: 80px;
+    margin: 0 15px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+/* footer */
 .footer{
     background-image: linear-gradient(45deg,#C8BFE7,#4F29B7);
     width: 100%;
